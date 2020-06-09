@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Is It Raining?
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+       
+        <!-- html -->
+        <!-- desc: single page app. 
+            ✔ h1 header or title of page. 
+            small icon that changes with weather.
+            ✔  h2 text dispalying weather.
+            ✔  h3 text displaying location.
+            ✔  p text: looking for another location? enter it here:
+            ✔  input box with submit button-->
+            
+        <!-- css  -->
+        <!-- TODO🧬 
+            ✔ find 2 fonts that complement each other on googlefonts.com 
+            ✔ go to coolors.co and find a soothing color palette
+            ✔ go on to codepen.io an find a nice button
+            apply them all in a clean layout-->
+
+        <!-- js -->
+        <!-- TODO (break each up into smaller taskes when you get to them)-->
+        <!-- set up and get a request from the API.
+            send default request for location when none is given (ex: wichita, ks)
+             use javascript the get weather and change icon on screen
+             use js to add weather/ temp to page
+             get user input from textbox on submit
+
+            bonus: ASK PERMISSION to get user's location for weather -->
+         
+        
+        
+        <div>
+            <h1>Your Local Weather</h1>
+
+        </div>  
+        <div id="WeatherPic"> this is where the picture showing the weather goes</div>
+        <div>
+            <h2 id="temperature">This is what your weather is.</h2>
+            <!--this needs to be  a box with a form to input location-->
+        </div>
+        <div>
+            <h3 id="location">here is where you are</h3>
+            <!--start with a default location that shows weather, then have a button to ask for permission or location-->
+            <p>default location</p>
+            <p>enter in your location</p>
+            <p>Looking for another location? Enter it here.
+                <form><label for="zipcode">Zipcode:</label><br>
+                <input type="text" name="Zipcode" id="zipcode">
+                <input type="submit" value="Submit">
+                </form>
+        <div class="container">
+            <button id="button"></button>
+        </div>
+            </p>
+        </div>
+        
+    </body>
+    
+</html>

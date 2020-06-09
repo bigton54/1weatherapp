@@ -1,0 +1,4 @@
+font-family: 'Amatic SC', cursive;
+font-family: 'Oswald', sans-serif;
+/*colors to use E7E5DF (platinum), 2F4858 (charcoal blue), C5DECD (opal)*/
+api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={a0dfd6dc21f141a576b9fd346ad02077}
