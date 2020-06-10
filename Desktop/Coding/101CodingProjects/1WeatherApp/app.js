@@ -30,14 +30,27 @@
 } else {
     console.log('geolocation not available');
 }
-
+//pos AKA position.coords
 var getCoordinates = function(pos){
-    var url = "api.openweathermap.org/data/2.5/forecast?lat={" + pos.latitude + "}&lon={" + pos.longitude + "}&appid={a0dfd6dc21f141a576b9fd346ad02077}"
+    var url = "http://api.openweathermap.org/data/2.5/forecast?lat=" + pos.latitude + "&lon=" + pos.longitude + "&appid=a0dfd6dc21f141a576b9fd346ad02077"
+
+function reqListener (){
+    console.log(this.responseText);
+}
+
+// var oReq = new XMLHttpRequest();
+// oReq.addEventListener("load", reqListener);
+// oReq.open("GET", "http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={a0dfd6dc21f141a576b9fd346ad02077}");
+// oReq.send ();
+
+
 
     if (pos){
         fetch(url)
-        .then(function(){
-            console.log(response)
+        .then((resp) => resp.json())
+        .then(function(response){
+            console.log(url)
+            console.log("response", response)
         })
         .catch(function(){
 
